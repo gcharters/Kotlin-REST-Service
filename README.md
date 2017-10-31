@@ -5,20 +5,25 @@ A simple "hello" service written in Kotlin, along with an integration test, also
 ## Build
 Build the service and run the test using:
 
+```
 mvn clean install
-
+```
 The build creates a war containing the application and the Kotlin pre-reqs.  The build also creates a runnable jar using Open Liberty.
 
 ## Start the service using maven
 
+```
 mvn liberty:run-server
-
+```
 ## Start the service using the runnable jar
 
+```
 cd target
-
 java -jar kotlinHello.jar
+```
 
 ## Use the service
 
+```
 http://localhost:9080/kotlinHello/hello/Graham
+```
