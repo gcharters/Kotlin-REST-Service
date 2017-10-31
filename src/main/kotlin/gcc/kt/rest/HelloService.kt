@@ -31,7 +31,7 @@ class HelloService : Application() {
     fun sayHello(@PathParam("name") name: String): Response {
 
         println("HelloService sayHello called: " + name)
-        val response = Response.ok("Hello, " + name).build()
+        val response = Response.ok("Hello " + name).build()
         return response
     }
 }
