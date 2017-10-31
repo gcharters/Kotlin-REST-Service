@@ -16,6 +16,7 @@ mvn liberty:run-server
 ## Start the service using the runnable jar
 
 cd target
+
 java -jar kotlinHello.jar
 
 ## Use the service
