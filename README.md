@@ -1,4 +1,4 @@
-# Kotlin-REST-Service
+# Kotlin REST Service
 
 A simple "hello" service written in Kotlin, along with an integration test, also written in Kotlin.  The build is maven-based and assumes code is only being written in Kotlin.  If you want to mix Java with Kotlin you need to follow the instructions here: https://kotlinlang.org/docs/reference/using-maven.html .
 
