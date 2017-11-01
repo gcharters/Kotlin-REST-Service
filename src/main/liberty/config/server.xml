@@ -13,7 +13,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<server description="Sample Servlet server">
+<server description="Sample Kotlin REST server">
     <featureManager>
         <feature>jaxrs-2.0</feature>
     </featureManager>
