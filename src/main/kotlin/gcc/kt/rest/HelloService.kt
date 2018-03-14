@@ -21,17 +21,21 @@ import javax.ws.rs.Path
 import javax.ws.rs.ApplicationPath
 import javax.ws.rs.PathParam
 import javax.ws.rs.GET
+import javax.ws.rs.Produces
+import javax.ws.rs.core.MediaType
+
+import gcc.kt.rest.Greeting
 
 @Path("/hello")
 @ApplicationPath("/")
 class HelloService : Application() {
     
     @GET
-    @Path("/{name}")   
-    fun sayHello(@PathParam("name") name: String): Response {
+    @Path("/{name}")
+    @Produces(MediaType.APPLICATION_JSON)
+    fun sayHello(@PathParam("name") name: String): Greeting {
 
         println("HelloService sayHello called: " + name)
-        val response = Response.ok("Hello " + name).build()
-        return response
+        return Greeting("Hello", name)
     }
 }

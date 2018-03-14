@@ -1,5 +1,10 @@
-.project
-.settings
-.classpath
+/.settings/
+/target/
+.*.swp
+/.project
+/.settings/
+.DS_Store
+/build/
+/.gradle/
 .factorypath
-target/
+/.classpath
