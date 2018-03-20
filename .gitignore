@@ -8,3 +8,5 @@
 /.gradle/
 .factorypath
 /.classpath
+/.vscode
+
