@@ -2,14 +2,6 @@
 
 Kotlin is a fast-growing alternative language to Java that runs on a JVM, which is being used for front-end development on Android as well as on servers. As a JVM language, you can use all of the tools and processes you know and love, but with a new language. In fact, you can mix Kotlin and Java code in the same application, meaning you can also continue to use your favorite frameworks and libraries. This lab will go from the basics of Kotlin code and how it compares to Java, to building and deploying REST APIs using Open Liberty.
 
-## Registration
-
-Before you get started, please register your attendance at this Quick Lab:
-
-1. Go to `http://ibm.biz/startmylab`
-2. Select `How to Run Kotlin on Liberty, and Why You'd Want to Do It` lab from the dropdown and click Ok
-3. You will be brought to the sign up page to register for an IBM Cloud Platform account.  If you do not have an account, please register for one in order to complete the lab.  If you do have an account, please proceed ahead to the next step.
-
 ## Introduction
 
 Kotlin is not a new language, but there's no doubt it's received a huge boost with the announcement last year that it was now <a href="https://developer.android.com/kotlin/index.html">an official language for Android</a> development.  As Kotlin use grows on Android, so does the need for Kotlin on the server.  "Backend for frontend" (BFF) is the concept of having server-side components that are aligned with the front-end user experience.  Both are usually created and maintained by the same team and so using the same technologies makes a lot of sense.  This, and the fact that Kotlin is simply a really good, modern language means demand for server-side Kotlin is growing.
