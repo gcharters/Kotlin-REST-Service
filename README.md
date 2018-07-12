@@ -14,7 +14,7 @@ This QuickLab shows a simple approach to using Kotlin on the Liberty application
 
 New languages often struggle to gain adoption early on because they're missing the richness of frameworks and standards that communities provide over time.  Kotlin has cleverly avoided this problem by being fully interoperable with Java.  This means that, for example, to create a RESTful backend in Kotlin, you can make use of existing Java server-side technologies, such as those supported by Eclipse MicroProfile (e.g. JAX-RS, JSON-P, etc).
 
-In this Quick Lab you'll clone a Kotlin RESTful service sample that includes an example Kotlin test and maven build configuration.  You'll see how the service s implemented, tested and buit and then build and try the servce out.
+In this Quick Lab you'll clone a Kotlin RESTful service sample that includes an example Kotlin test and maven build configuration.  You'll see how the service is implemented, tested and built and then build and try the service out.
 
 ### Getting started
 
@@ -49,7 +49,7 @@ The absence of an explicit maven `<scope/>` for this dependency means it will be
 
 ### The server configuration
 
-The server configuration is identical to that of a Java RESTful service, just specifying a dependency on the JAX-RS feature:, the ports to be used and the deployment of the application.  Note, the name of the application will be used as the `context root` of the service:
+The server configuration is identical to that of a Java RESTful service, just specifying a dependency on the JAX-RS feature, the ports to be used and the deployment of the application.  Note, the name of the application will be used as the `context root` of the service:
 
 ```XML
 <server description="Sample Kotlin REST server">
