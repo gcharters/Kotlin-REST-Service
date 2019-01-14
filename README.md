@@ -16,6 +16,10 @@ New languages often struggle to gain adoption early on because they're missing t
 
 In this Quick Lab you'll clone a Kotlin RESTful service sample that includes an example Kotlin test and maven build configuration.  You'll see how the service is implemented, tested and built and then build and try the service out.
 
+### Prerequisites
+
+Java 8 is required.
+
 ### Getting started
 
 Clone the Kotlin sample repository:
