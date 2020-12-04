@@ -54,7 +54,7 @@ The server configuration is identical to that of a Java RESTful service, just sp
 ```XML
 <server description="Sample Kotlin REST server">
     <featureManager>
-        <feature>jaxrs-2.0</feature>
+        <feature>jaxrs-2.1</feature>
     </featureManager>
 
     <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" />
@@ -70,6 +70,7 @@ The RESTful service implementation will generally look familiar to anyone who ha
 ```Java
 @Path("/hello")
 @ApplicationPath("/")
+@Produces("application/json")
 class HelloService : Application() {
     
     @GET
@@ -113,7 +114,7 @@ class HelloServiceIT {
         // Make the request
         val client = ClientBuilder.newClient()
         val target = client.target(url)
-        val response = target.request().get()
+        val response = target.request().accept(MediaType.APPLICATION_JSON).get()
 
         // Test we got an OK response
         assertEquals("Incorrect response code from " + url, 200, response.getStatus())
