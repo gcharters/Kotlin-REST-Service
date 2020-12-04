@@ -23,6 +23,7 @@ import javax.ws.rs.client.ClientBuilder
 import javax.ws.rs.client.Invocation
 import javax.ws.rs.client.WebTarget
 import javax.ws.rs.core.Response
+import javax.ws.rs.core.MediaType
 
 class HelloServiceIT {
 
@@ -39,7 +40,7 @@ class HelloServiceIT {
         // Make the request
         val client = ClientBuilder.newClient()
         val target = client.target(url)
-        val response = target.request().get()
+        val response = target.request().accept(MediaType.APPLICATION_JSON).get()
 
         // Test we got an OK response
         assertEquals("Incorrect response code from " + url, 200, response.getStatus())

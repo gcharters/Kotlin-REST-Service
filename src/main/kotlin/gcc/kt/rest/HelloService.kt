@@ -28,6 +28,7 @@ import gcc.kt.rest.Greeting
 
 @Path("/hello")
 @ApplicationPath("/")
+@Produces("application/json")
 class HelloService : Application() {
     
     @GET
